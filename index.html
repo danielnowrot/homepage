@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Nowrot - o mnie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <script defer src="js/script.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body js-body">
+    <header class="header">
+        <h1 class="header__h1">Daniel Nowrot</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__element">
+                <a href="#oMnie" class="navigation__link">Trochę o mnie</a>
+            </li>
+            <li class="navigation__element">
+                <a href="#praca" class="navigation__link">Zawodowo</a>
+            </li>
+            <li class="navigation__element">
+                <a href="#czasWolny" class="navigation__link">W wolnym czasie</a>
+            </li>
+            <li class="navigation__element">
+                <a href="#tabelka" class="navigation__link">Nasze trasy rowerowe</a>
+            </li>
+        </ul>
+    </nav>
+    <p>
+        <button class="button js-button">
+            <span class="js-button__name">Ciemny</span> motyw
+        </button>
+    </p>
+    <main>
+        <section id="oMnie" class="section">
+            <h2 class="section__header">
+                Trochę o mnie
+            </h2>
+            <p class="section__text">
+                Cześć! Miło, że tu zaglądasz. Urodziłem się na południu Polski w mieście Jastrzębie Zdrój.
+                Od tamtego czasu mieszkałem już w wielu różnych miejscach kraju. Obecnie moim miastem stał się Chorzów.
+                No
+                ale czas leci - zobaczymy ile tutaj zostanę...
+            </p>
+        </section>
+        <section id="praca" class="section">
+            <h2 class="section__header">
+                Zawodowo
+            </h2>
+            <p class="section__text">
+                Dawno, dawno temu skończyłem kierunek <em> Elektronika i telekomunikacja</em> na Politechnice Śląskiej.
+                Chwilę po studiach udało mi się nawet pracować w zawodzie, ale gdzieś czułem, że to nie to. <br>Po kilku
+                kursach zacząłem pracę jako automatyk PLC. Gdzieś po drodze doszło jeszcze projektowanie SCADA i ...
+                znowu przyszedł czas na zmianę.
+            </p>
+        </section>
+        <section id="czasWolny" class="section">
+            <h2 class="section__header">
+                W wolnym czasie
+            </h2>
+            <p class="section__text">
+                Jak już znajdę chwilkę czasu dla siebie to albo z całą rodziną wybieramy się na rowery - to taka nasza
+                wspólna pasja.
+                Albo jak czasu nieco mniej to idziemy na spacer.<br>Jakiś czas temu zajmowałem się też modelarstwem RC i
+                mam nadzięję jeszcze do tego wrócić.<br> A ostatnio do tego doszedł jeszcze Frontend 😁
+            </p>
+        </section>
+        <section id="tabelka" class="section">
+            <h2 class="section__header">
+                Ulubione rodzinne trasy rowerowe
+            </h2>
+            <p class="section__text">
+            <table class="table">
+                <caption class="table__caption">Nasze trasy</caption>
+                <tr class="table__row">
+                    <th class="table__cell table__header">Trasa</th>
+                    <th class="table__cell table__header">Skąd</th>
+                    <th class="table__cell table__header">Dokąd</th>
+                    <th class="table__cell table__header">Długość</th>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__header">Dookoła Paprocan</th>
+                    <td class="table__cell ">Kobiór</td>
+                    <td class="table__cell ">Tychy-Paprocany</td>
+                    <td class="table__cell ">20 km</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__header">Do Pszczyny</th>
+                    <td class="table__cell ">Kobiór</td>
+                    <td class="table__cell ">Pszczyna</td>
+                    <td class="table__cell ">25 km</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__header">Po mieście do parku</th>
+                    <td class="table__cell ">Z domu</td>
+                    <td class="table__cell ">Park</td>
+                    <td class="table__cell ">15 km</td>
+                </tr>
+            </table>
+            </p>
+        </section>
+    </main>
+    <footer>
+        ©Copyright Daniel Nowrot.
+    </footer>
+</body>
+
+</html>

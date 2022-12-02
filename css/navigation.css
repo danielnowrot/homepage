@@ -1,0 +1,31 @@
+.navigation__list {
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+}
+
+.navigation__element {
+    font-size: 20px;
+    font-weight: normal;
+    border: 1px solid rgb(41, 46, 90);
+    border-radius: 3px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+}
+
+.navigation__element--dark {
+    border: 1px solid rgb(241, 241, 241);
+    color: rgb(241, 241, 241);
+    background-color: rgb(5, 5, 5);
+}
+
+.navigation__element:hover {
+    background-color: rgb(41, 46, 90);
+    color: rgb(241, 241, 241);
+}
+
+.navigation__link {
+    color: currentColor;
+    text-decoration: none;
+}
