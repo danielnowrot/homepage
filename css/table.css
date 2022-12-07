@@ -10,7 +10,7 @@
     font-size: 20px;
 }
 
-.table__header {
+.table__cell--header {
     font-size: 24px;
     font-weight: normal;
     background-color: rgb(245, 173, 65);
