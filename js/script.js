@@ -1,11 +1,11 @@
 {
-    const butt1 = document.querySelector(".js-button");
+    const button = document.querySelector(".js-button");
     
     const welcome = () => {
         console.log("Cześć! To moja pierwsza strona");
     }
 
-    let onChangeBackgroundClick = () => {
+    const onChangeBackgroundClick = () => {
         const themeBody = document.querySelector(".js-body");
         const themeButton = document.querySelector(".js-button");
         const buttonName = document.querySelector(".js-button__name");
@@ -17,23 +17,27 @@
             "Jasny" : "Ciemny";
     }
 
-    let changeElementsTheme = () => {
+    const changeElementsTheme = () => {
         const tableThemes = document.querySelectorAll(".table__cell");
         const navElements = document.querySelectorAll(".navigation__element");
        
         tableThemes.forEach((tableCell) => {
-            butt1.addEventListener("click", () => {
+            button.addEventListener("click", () => {
                 tableCell.classList.toggle("table__cell--dark");
             })
         })
         navElements.forEach((navElement) => {
-            butt1.addEventListener("click", () => {
+            button.addEventListener("click", () => {
                 navElement.classList.toggle("navigation__element--dark");
             })
         })
     }
 
-    welcome();
-    butt1.addEventListener("click", onChangeBackgroundClick);
-    changeElementsTheme();
+    const init = () => {
+        welcome();
+        button.addEventListener("click", onChangeBackgroundClick);
+        changeElementsTheme();
+    }
+    
+    init();
 }
